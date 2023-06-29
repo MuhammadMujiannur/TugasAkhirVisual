@@ -1,9 +1,9 @@
 object Form2: TForm2
-  Left = 221
-  Top = 137
-  Width = 870
-  Height = 450
-  Caption = 'Tabel Walikelas'
+  Left = 198
+  Top = 129
+  Width = 928
+  Height = 480
+  Caption = 'Table Wali kelas'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -137,8 +137,8 @@ object Form2: TForm2
     ParentFont = False
   end
   object dgSiswadbgrd1: TDBGrid
-    Left = -23
-    Top = 254
+    Left = 12
+    Top = 260
     Width = 877
     Height = 157
     DataSource = ds1
@@ -209,7 +209,7 @@ object Form2: TForm2
   end
   object b1: TButton
     Left = 116
-    Top = 220
+    Top = 228
     Width = 75
     Height = 29
     Caption = 'Baru'
@@ -223,6 +223,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'Simpan'
     TabOrder = 2
+    OnClick = b2Click
   end
   object b3: TButton
     Left = 332
@@ -231,6 +232,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'Edit'
     TabOrder = 3
+    OnClick = b3Click
   end
   object b4: TButton
     Left = 432
@@ -239,6 +241,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'Hapus'
     TabOrder = 4
+    OnClick = b4Click
   end
   object b5: TButton
     Left = 540
@@ -247,6 +250,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'Batal'
     TabOrder = 5
+    OnClick = b5Click
   end
   object b6: TButton
     Left = 644
@@ -255,6 +259,7 @@ object Form2: TForm2
     Height = 33
     Caption = 'Print'
     TabOrder = 6
+    OnClick = b6Click
   end
   object e_1: TEdit
     Left = 144
