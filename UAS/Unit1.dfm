@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 280
-  Top = 85
+  Left = 247
+  Top = 134
   Width = 928
   Height = 480
   Caption = 'Table Siswa'
@@ -435,6 +435,8 @@ object Form1: TForm1
       ''
       '')
     Params = <>
+    Properties.Strings = (
+      'select * from siswa')
     Left = 76
     Top = 224
   end
@@ -443,8 +445,8 @@ object Form1: TForm1
     Left = 40
     Top = 220
   end
-  object frxDBDataset1: TfrxDBDataset
-    UserName = 'frxDBDataset'
+  object frxDBDataset: TfrxDBDataset
+    UserName = 'frxDBDataset1'#13#10
     CloseDataSource = False
     DataSet = zqry2
     BCDToCurrency = False
@@ -453,6 +455,8 @@ object Form1: TForm1
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
+    DataSet = frxDBDataset
+    DataSetName = 'frxDBDataset1'#13#10
     DotMatrixReport = False
     IniFile = '\Software\Fast Reports'
     PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
@@ -460,7 +464,7 @@ object Form1: TForm1
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45097.373740509300000000
-    ReportOptions.LastChange = 45100.702371041670000000
+    ReportOptions.LastChange = 45100.702371041700000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -470,8 +474,8 @@ object Form1: TForm1
     Top = 68
     Datasets = <
       item
-        DataSet = frxDBDataset1
-        DataSetName = 'frxDBDataset'
+        DataSet = frxDBDataset
+        DataSetName = 'frxDBDataset1'#13#10
       end>
     Variables = <>
     Style = <>
@@ -722,16 +726,16 @@ object Form1: TForm1
         Height = 71.811070000000000000
         Top = 177.637910000000000000
         Width = 1511.812000000000000000
-        DataSet = frxDBDataset1
-        DataSetName = 'frxDBDataset'
+        DataSet = frxDBDataset
+        DataSetName = 'frxDBDataset1'#13#10
         RowCount = 0
         object Memo2: TfrxMemoView
           Width = 34.015770000000000000
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Id_Siswa'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -740,7 +744,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Id_Siswa"]')
+            '[frxDBDataset1'
+            '."Id_Siswa"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -750,8 +755,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Nis'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -760,7 +765,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Nis"]')
+            '[frxDBDataset1'
+            '."Nis"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -770,8 +776,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Nama_Siswa'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -780,7 +786,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Nama_Siswa"]')
+            '[frxDBDataset1'
+            '."Nama_Siswa"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -790,8 +797,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Nik'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -800,7 +807,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Nik"]')
+            '[frxDBDataset1'
+            '."Nik"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -810,8 +818,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Tanggal lahir'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -820,7 +828,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Tanggal lahir"]')
+            '[frxDBDataset1'
+            '."Tanggal lahir"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -830,8 +839,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Nisn'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -840,7 +849,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Nisn"]')
+            '[frxDBDataset1'
+            '."Nisn"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -850,8 +860,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Jenis Kelamin'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -13
@@ -860,7 +870,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Jenis Kelamin"]')
+            '[frxDBDataset1'
+            '."Jenis Kelamin"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -870,8 +881,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Jurusan'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -880,7 +891,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Jurusan"]')
+            '[frxDBDataset1'
+            '."Jurusan"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -890,8 +902,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Alamat'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -900,7 +912,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Alamat"]')
+            '[frxDBDataset1'
+            '."Alamat"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -910,8 +923,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Telp'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -920,7 +933,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Telp"]')
+            '[frxDBDataset1'
+            '."Telp"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -930,8 +944,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Status'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -940,7 +954,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Status"]')
+            '[frxDBDataset1'
+            '."Status"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -950,8 +965,8 @@ object Form1: TForm1
           Height = 71.811070000000000000
           ShowHint = False
           DataField = 'Wali kelas'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset'
+          DataSet = frxDBDataset
+          DataSetName = 'frxDBDataset1'#13#10
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -16
@@ -960,7 +975,8 @@ object Form1: TForm1
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           HAlign = haCenter
           Memo.UTF8 = (
-            '[frxDBDataset."Wali kelas"]')
+            '[frxDBDataset1'
+            '."Wali kelas"]')
           ParentFont = False
           VAlign = vaCenter
         end
@@ -972,6 +988,8 @@ object Form1: TForm1
     SQL.Strings = (
       'select * from siswa')
     Params = <>
+    Properties.Strings = (
+      'select * from siswa')
     Left = 680
     Top = 124
   end
